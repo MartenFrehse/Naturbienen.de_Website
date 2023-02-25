@@ -30,24 +30,33 @@
             <meta name="msapplication-TileColor" content="#ffffff">
             <meta name="msapplication-TileImage" content="Bilder/Icon/ms-icon-144x144.png">
             <meta name="theme-color" content="#ffffff">
+            <!-- Link Fonts -->
+            <link rel="stylesheet" href="fonts/css/fontawesome.css">
+            <link rel="stylesheet" href="fonts/css/solid.css">
+            <link rel="stylesheet" href="fonts/webfonts/fa-solid-900.*">
     </head>
 <main>
     <header>
         <h1 class="head">Naturbienen.de</h1>
         <p>Alles über die Biene, das Imkern und den Honig.</p>
+        <!-- Navigation Bar -->
+        <div class="topnav" id="myTopnav">
+            <a href="index.html" class="active">Startseite</a>
+            <a href="Sites/blog.html">Blog</a>
+            <a href="Sites/imkern.html">Imkern</a>
+            <a href="Sites/biene.html">Biene</a>
+            <a href="Sites/wildbiene.html">Wildbiene</a>
+            <a href="Sites/shop.html">Shop</a>
+            <a class="icon" onclick="myFunction()">
+              <i class="fa fa-bars"></i>
+            </a>
+        </div>
+        <!-- JS Script -->
+        <script src="navbar.js"></script>
     </header>
     <body>
-        <nav>
-            <ul>
-                <li><a href="index.html">Startseite</a></li> 
-                <li><a href="Sites/blog.html">Blog</a></li> 
-                <li><a href="Sites/imkern.html">Imkern</a></li> 
-                <li><a href="Sites/biene.html">Biene</a></li> 
-                <li><a href="Sites/wildbiene.html">Wildbiene</a></li> 
-                <li><a href="Sites/shop.html">Shop</a></li> 
-            </ul>
-        </nav>
-
+        
+        
         <h2>Bienen im Winter</h2>
         <p>
         <picture>
@@ -58,7 +67,10 @@
                 <img src="Bilder/Winter/Bienen_im_Winter1_480.jpg" alt="Bienenvölker bei Schneefall">
         </picture>
         </p>
-        
+        <!-- Filler -->
+        <div class="filler">
+
+        </div>
     </body>
     <footer>
         <nav>
