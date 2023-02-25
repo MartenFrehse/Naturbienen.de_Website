@@ -106,3 +106,30 @@ Filler
     height: 1000px;
     background-color: blanchedalmond;
 }
+
+/*
+====================
+Bottom Nav Bar
+====================
+*/
+/* Add a black background color to the top navigation */
+.bottom-nav {
+    background-color: white;
+    overflow: hidden;
+  }
+  
+  /* Style the links inside the navigation bar */
+  .bottom-nav a {
+    float: left;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    border-bottom: 3px solid transparent;
+  }
+  
+  .bottom-nav a:hover {
+    border-bottom: 3px solid rgb(28, 185, 247);
+  }

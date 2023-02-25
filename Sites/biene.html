@@ -29,34 +29,40 @@
             <meta name="msapplication-TileImage" content="../Bilder/Icon/ms-icon-144x144.png">
             <meta name="theme-color" content="#ffffff">
             <!-- Link Fonts -->
-            <link rel="stylesheet" href="fonts/css/fontawesome.css">
-            <link rel="stylesheet" href="fonts/css/solid.css">
-            <link rel="stylesheet" href="fonts/webfonts/fa-solid-900.*">
+            <link rel="stylesheet" href="../fonts/css/fontawesome.css">
+            <link rel="stylesheet" href="../fonts/css/solid.css">
+            <link rel="stylesheet" href="../fonts/webfonts/fa-solid-900.*">
     </head>
 <main>
     <header>
         <h1>Die Biene</h1>
         <p>Naturbiene.de</p>
+        <!-- Navigation Bar -->
+        <div class="topnav" id="myTopnav">
+            <a href="../index.html">Startseite</a>
+            <a href="blog.html">Blog</a>
+            <a href="imkern.html">Imkern</a>
+            <a href="biene.html" class="active">Biene</a>
+            <a href="wildbiene.html">Wildbiene</a>
+            <a href="shop.html">Shop</a>
+            <a class="icon" onclick="myFunction()">
+              <i class="fa fa-bars"></i>
+            </a>
+        </div>
+        <!-- JS Script -->
+        <script src="../navbar.js"></script>
     </header>
     <body>
-        <nav>
-            <ul>
-                <li><a href="../index.html">Startseite</a></li> 
-                <li><a href="blog.html">Blog</a></li> 
-                <li><a href="imkern.html">Imkern</a></li> 
-                <li><a href="biene.html">Biene</a></li> 
-                <li><a href="wildbiene.html">Wildbiene</a></li> 
-                <li><a href="shop.html">Shop</a></li> 
-            </ul>
-        </nav>
+        <div class="filler"></div>
     </body>
     <footer>
-        <nav>
-            <a href="../index.html">Startseite</a> |
-            <a href="me.html">Über mich</a> |
-            <a href="impressum.html">Impressum</a> |
+        <!-- Bottom NavBar -->
+        <div class="bottom-nav">
+            <a href="../index.html">Startseite</a> 
+            <a href="me.html">Über mich</a> 
+            <a href="impressum.html">Impressum</a> 
             <a href="kontakt.html">Kontakt</a>
-        </nav>
+          </div>
     </footer>
 </main>
 </html>

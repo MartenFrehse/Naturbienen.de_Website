@@ -5,57 +5,63 @@
         <meta charset="UTF-8">
         <meta name="description" 
             content="Beschreiung.">
-            <!-- Die Beschreibung muss noch verbessert werden! --> 
+        <!-- Die Beschreibung muss noch verbessert werden! --> 
         <meta name="viewport"
             content="width=device-width, initial-scale=1.0, shrink-to-fit=no"> 
-            <!-- adding Stylesheet -->
-            <link rel="stylesheet" href="../style.css">
-          <!-- Icons geadded für verschiedene Geräte -->
-          <link rel="apple-touch-icon" sizes="57x57" href="../Bilder/Icon/apple-icon-57x57.png">
-          <link rel="apple-touch-icon" sizes="60x60" href="../Bilder/Icon/apple-icon-60x60.png">
-          <link rel="apple-touch-icon" sizes="72x72" href="../Bilder/Icon/apple-icon-72x72.png">
-          <link rel="apple-touch-icon" sizes="76x76" href="../Bilder/Icon/apple-icon-76x76.png">
-          <link rel="apple-touch-icon" sizes="114x114" href="../Bilder/Icon/apple-icon-114x114.png">
-          <link rel="apple-touch-icon" sizes="120x120" href="../Bilder/Icon/apple-icon-120x120.png">
-          <link rel="apple-touch-icon" sizes="144x144" href="../Bilder/Icon/apple-icon-144x144.png">
-          <link rel="apple-touch-icon" sizes="152x152" href="../Bilder/Icon/apple-icon-152x152.png">
-          <link rel="apple-touch-icon" sizes="180x180" href="../Bilder/Icon/apple-icon-180x180.png">
-          <link rel="icon" type="image/png" sizes="192x192"  href="../Bilder/Icon/android-icon-192x192.png">
-          <link rel="icon" type="image/png" sizes="32x32" href="../Bilder/Icon/favicon-32x32.png">
-          <link rel="icon" type="image/png" sizes="96x96" href="../Bilder/Icon/favicon-96x96.png">
-          <link rel="icon" type="image/png" sizes="16x16" href="../Bilder/Icon/favicon-16x16.png">
-          <link rel="manifest" href="../Bilder/Icon/manifest.json">
-          <meta name="msapplication-TileColor" content="#ffffff">
-          <meta name="msapplication-TileImage" content="../Bilder/Icon/ms-icon-144x144.png">
-          <meta name="theme-color" content="#ffffff">
-          <!-- Link Fonts -->
-          <link rel="stylesheet" href="fonts/css/fontawesome.css">
-          <link rel="stylesheet" href="fonts/css/solid.css">
-          <link rel="stylesheet" href="fonts/webfonts/fa-solid-900.*">
+        <!-- adding Stylesheet -->
+        <link rel="stylesheet" href="../style.css">
+        <!-- Icons geadded für verschiedene Geräte -->
+        <link rel="apple-touch-icon" sizes="57x57" href="../Bilder/Icon/apple-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="../Bilder/Icon/apple-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="../Bilder/Icon/apple-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="../Bilder/Icon/apple-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="../Bilder/Icon/apple-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="../Bilder/Icon/apple-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="../Bilder/Icon/apple-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="../Bilder/Icon/apple-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="../Bilder/Icon/apple-icon-180x180.png">
+        <link rel="icon" type="image/png" sizes="192x192"  href="../Bilder/Icon/android-icon-192x192.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="../Bilder/Icon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="96x96" href="../Bilder/Icon/favicon-96x96.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="../Bilder/Icon/favicon-16x16.png">
+        <link rel="manifest" href="../Bilder/Icon/manifest.json">
+        <meta name="msapplication-TileColor" content="#ffffff">
+        <meta name="msapplication-TileImage" content="../Bilder/Icon/ms-icon-144x144.png">
+        <meta name="theme-color" content="#ffffff">
+        <!-- Link Fonts -->
+        <link rel="stylesheet" href="../fonts/css/fontawesome.css">
+        <link rel="stylesheet" href="../fonts/css/solid.css">
+        <link rel="stylesheet" href="../fonts/webfonts/fa-solid-900.*">
     </head>
 <main>
     <header>
         <h1>Der Naturbienen Shop</h1>
+        <!-- Navigation Bar -->
+        <div class="topnav" id="myTopnav">
+            <a href="../index.html">Startseite</a>
+            <a href="blog.html">Blog</a>
+            <a href="imkern.html">Imkern</a>
+            <a href="biene.html">Biene</a>
+            <a href="wildbiene.html">Wildbiene</a>
+            <a href="shop.html" class="active">Shop</a>
+            <a class="icon" onclick="myFunction()">
+              <i class="fa fa-bars"></i>
+            </a>
+        </div>
+        <!-- JS Script -->
+        <script src="../navbar.js"></script>
     </header>
     <body>
-        <nav>
-            <ul>
-                <li><a href="../index.html">Startseite</a></li> 
-                <li><a href="blog.html">Blog</a></li> 
-                <li><a href="imkern.html">Imkern</a></li> 
-                <li><a href="biene.html">Biene</a></li> 
-                <li><a href="wildbiene.html">Wildbiene</a></li> 
-                <li><a href="shop.html">Shop</a></li> 
-            </ul>
-        </nav>
+        <div class="filler"></div>
     </body>
     <footer>
-        <nav>
-            <a href="../index.html">Startseite</a> |
-            <a href="me.html">Über mich</a> |
-            <a href="impressum.html">Impressum</a> |
+        <!-- Bottom NavBar -->
+        <div class="bottom-nav">
+            <a href="../index.html">Startseite</a> 
+            <a href="me.html">Über mich</a> 
+            <a href="impressum.html">Impressum</a> 
             <a href="kontakt.html">Kontakt</a>
-        </nav>
+          </div>
     </footer>
 </main>
 </html>
