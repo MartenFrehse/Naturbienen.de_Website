@@ -2,16 +2,15 @@
 header,
 nav,
 footer {
+    width: 100%;
     text-align: center;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     margin-top: 5px;
 }
 
-/* grey text */
-h1 { color: green; }
-
-/* grey dotted frame */
+/* grey dotted frame 
 p { border: 1px dotted gray; }
+*/
 
 /* font */
 h1,
@@ -26,8 +25,43 @@ h1 { font-size: 160%; }
 h2 { font-size: 140%; }
 h3 { font-size: 120%; }
 
-/* h1 head class (just on the index.html page for now) gets a bigger font-size */
-.head { font-size: 220%; }
+/* 
+===================================
+HEAD DESIGN 
+===================================
+*/
+.head-headline { 
+    margin: 50px 0 0 0;
+    font-size: 500%; 
+    color: white;
+    text-transform: capitalize;
+    /*
+    background: rgb(27,132,168);
+    background-image: linear-gradient(125deg, rgba(27,132,168,1) 13%, rgba(13,220,108,1) 55%, rgba(241,211,8,1) 84%);
+    
+    background: rgb(27,132,168);
+    background: linear-gradient(125deg, rgba(27,132,168,1) 24%, rgba(13,220,108,1) 43%, rgba(241,211,8,1) 70%);
+    
+    background: rgb(27,132,168);
+    background: linear-gradient(125deg, rgba(27,132,168,1) 35%, rgba(13,220,108,1) 50%, rgba(241,211,8,1) 65%);
+    */
+    background: rgb(27,132,168);
+    background: linear-gradient(125deg, rgba(27,132,168,1) 25%, rgba(13,220,108,1) 50%, rgba(241,211,8,1) 75%);
+    /*
+    background: rgb(27,132,168);
+    background: linear-gradient(125deg, rgba(27,132,168,1) 10%, rgba(13,220,108,1) 20%, rgba(241,211,8,1) 30%);
+    */
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 150% 150%;
+}
+
+.head-descripton {
+    margin: 0 0 70px 0;
+    font-weight: 700;
+
+}
 
 /*
 ===================================
@@ -41,8 +75,10 @@ a {
 
 /* Add a black background color to the top navigation */
 .topnav {
-    background-color: rgb(141, 228, 255);
+    background-color: rgba(23,157,151,0.5);
     overflow: hidden;
+    border-bottom: rgba(27,132,168,1);
+    border-bottom-style: solid;
 }
   
 /* Style the links inside the navigation bar */
@@ -58,13 +94,13 @@ a {
   
 /* Change the color of links on hover */
 .topnav a:hover {
-    background-color: #66b5f7;
+    background-color: #179d97;
     color: black;
 }
   
 /* Add an active class to highlight the current page */
 .topnav a.active {
-    background-color: #009cc4;
+    background-color: rgba(27,132,168,1);
     color: black;
 }
   
