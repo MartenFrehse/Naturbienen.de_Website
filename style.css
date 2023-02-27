@@ -1,3 +1,14 @@
+body > footer {
+    background-color:rgba(255, 197, 8, 0.329);
+}
+
+article {
+    margin: 0 15% 0 15%; 
+    border: 1px solid black;
+    text-align: center;
+    background-color: white;
+}
+
 /* black border, central text, 5px distance from top */
 header,
 nav,
@@ -24,6 +35,28 @@ p {
 h1 { font-size: 160%; }
 h2 { font-size: 140%; }
 h3 { font-size: 120%; }
+
+/*
+==================================
+FOOTER STICK TO THE BOTTOM 
+==================================
+
+#page-container {
+    position: relative;
+    min-height: 100vh;
+}
+
+#content-wrap {
+    padding-bottom: 2.5rem;
+}
+
+#footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 2.5rem;
+}*/ 
+
 
 /* 
 ===================================
@@ -57,7 +90,7 @@ HEAD DESIGN
     background-size: 150% 150%;
 }
 
-.head-descripton {
+.head-description {
     margin: 0 0 70px 0;
     font-weight: 700;
 
@@ -150,7 +183,7 @@ Bottom Nav Bar
 */
 /* Add a black background color to the top navigation */
 .bottom-nav {
-    background-color: white;
+    background-color: transparent;
     overflow: hidden;
   }
   
