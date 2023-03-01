@@ -33,7 +33,10 @@ p {
 
 /* font size */
 h1 { font-size: 160%; }
-h2 { font-size: 140%; }
+h2 { 
+    font-size: 140%; 
+    text-align: center;
+}
 h3 { font-size: 120%; }
 
 /*
