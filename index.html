@@ -66,12 +66,55 @@
                 Hier bei mir in Hamburg reicht es, wenn ein weiterer erfahrener Imker dabei ist, um die Proben zu ziehen und erst bei gefundenen Sporen schaltet sich ein Bienensachverständiger mit dem Veterinäramt ein. 
                 Wenn du mehr über die amerikanische Faulbrut wissen möchtest, dann schaue doch einmal bei meinem Eintrag zur Amerikanischen Faulbrut rein.
             </p>
+            <!-- Container for the image gallery -->
+            <div class="imageContainer">
+
+                <!-- Full-width images with number text -->
+                <div class="imageSlide">
+                    <div class="numbertext">1 / 3</div>
+                        <img src="Bilder/Winter/Bienen_im_Winter1_1024.jpg" alt="Bienenvölker bei Schneefall" style="width:100%">
+                </div>
+
+                <div class="imageSlide">
+                    <div class="numbertext">2 / 3</div>
+                        <img src="Bilder/Winter/Bienen_im_Winter1_1024.jpg" alt="Bienenvölker bei Schneefall" style="width:100%">
+                </div>
+
+                <div class="imageSlide">
+                    <div class="numbertext">3 / 3</div>
+                        <img src="Bilder/Winter/Bienen_im_Winter1_1024.jpg" alt="Bienenvölker bei Schneefall" style="width:100%">
+                </div>
+
+                <!-- next und previous button -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="prev" onclick="plusSlides(-1)">&#10095;</a>
+
+                <!-- Image text -->
+                <div class="caption-container">
+                    <p id="caption"></p>
+                </div>
+
+                <!-- Thumbnail images -->
+                <div class="row">
+                    <div class="column">
+                        <img class="demo cursor" src="Bilder/Winter/Bienen_im_Winter1_480.jpg" style="width:100%" onclick="currentSlide(1)" alt="Bienenvölker bei Schneefall">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="Bilder/Winter/Bienen_im_Winter1_480.jpg" style="width:100%" onclick="currentSlide(2)" alt="Bienenvölker bei Schneefall">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="Bilder/Winter/Bienen_im_Winter1_480.jpg" style="width:100%" onclick="currentSlide(3)" alt="Bienenvölker bei Schneefall">
+                    </div>
+                </div>
+            </div>
         </article>
         <article>
             <h3>Ende Februar</h3>
             <p>
                 Die Bienen fliegen bei Sonne schon und besuchen Krokusse und andere Frühblüher, die überall in der Nähe stehen. Die Bienen starten so Pollen für die erste Brut zu suchen, auch wenn die Nächte wieder kalt geworden sind. 
             </p>
+            <!-- responsive picture example -->
+            <img id="responsive-picture" src="Bilder/Winter/Bienen_im_Winter1_1024.jpg" alt="Bienenvölker bei Schneefall">
         </article>
         <article>
             <h3>Januar</h3>
@@ -97,7 +140,7 @@
                 </picture>
             </p>
         </article>
-    
+        <script src="imageContainer.js"></script>
     </body>
     <footer id="footer">
         <!-- Bottom NavBar -->
