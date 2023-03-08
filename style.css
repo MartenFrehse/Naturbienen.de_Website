@@ -11,6 +11,8 @@ IMAGE-CONTAINER
 /* Position the image container (needed to position the left and right arrows) */
 .imageContainer {
     position: relative;
+    width: 1024px;
+    margin: auto;
 } 
 
 /* Hide the images by default */
@@ -46,6 +48,12 @@ IMAGE-CONTAINER
     border-radius: 3px 0 0 3px;
   }
 
+/* Position the prev button to the left */
+.prev {
+  left: 0;
+  border-radius: 3px 0 0 3px;
+}
+
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover,
 .next:hover {
@@ -64,11 +72,16 @@ IMAGE-CONTAINER
 /* Container for image text */
 .caption-container {
     text-align: center;
-    background-color: #222;
+    background-color: white;
     padding: 2px 16px;
-    color: white;
+    color: black;
   }
   
+.row {
+  margin: 0 auto;
+  position: absolute+;
+}
+
 .row:after {
     content: "";
     display: table;
@@ -90,6 +103,12 @@ IMAGE-CONTAINER
 .demo:hover {
     opacity: 1;
   }
+/*
+========================================================================================
+*/
+body {
+  margin: 0;
+}
 
 body > footer {
     background-color:rgba(255, 197, 8, 0.329);
