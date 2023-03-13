@@ -189,7 +189,8 @@ IMAGE-CONTAINER
 */
 
 /* Position the image container (needed to position the left and right arrows) */
-.imageContainer {
+.imageContainer,
+.imageContainer2 {
   position: relative;
   /* width: 1024px; */
   margin: auto;
