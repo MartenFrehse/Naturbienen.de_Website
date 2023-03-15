@@ -55,10 +55,9 @@
         <script src="navbar.js"></script>
     </header>
     <body>
-        <h2>Newsfeed</h2>
         <article class="article">
             <h3>Anfang März</h3>
-            <p>
+            <p class="text">
                 Es ist ein schöner Tag, wir haben zwar nur acht Grad, aber sobald sich Sonnenstrahlen zeigen, fliegen die Bienen. 
                 Ich nutze die Gelegenheit und öffne die Bienenvölker, um eine Futterkranzprobe zu entnehmen. 
                 Diese wird auf Sporen der amerikanischen Faulbrut geprüft und für diesen Zweck beim Veterinäramt abgegeben. 
@@ -71,19 +70,13 @@
 
                 <!-- Full-width images with number text -->
                 <div class="imageSlide">
-                    <div class="numbertext">1 / 3</div>
+                    <div class="numbertext">1 / 2</div>
                         <img src="Bilder/Winter/Schnee2-1024.jpg" alt="Bienen im Schnee" id="responsive-picture">
                 </div>
 
                 <div class="imageSlide">
-                    <div class="numbertext">2 / 3</div>
+                    <div class="numbertext">2 / 2</div>
                         <img src="Bilder/Winter/Schnee1-1024.jpg" alt="Bienen im Schnee" id="responsive-picture">
-                </div>
-            
-
-                <div class="imageSlide">
-                    <div class="numbertext">3 / 3</div>
-                        <img src="Bilder/Winter/Schneefall1-1024.jpg" alt="Bienenstöcke bei Schneefall" id="responsive-picture">
                 </div>
 
                 <!-- next und previous button -->
@@ -98,69 +91,25 @@
                 <!-- Thumbnail images -->
                 <div class="row">
                     <div class="column">
-                        <img class="demo cursor" src="Bilder/Winter/Schnee2-1024.jpg" style="width:100%" onclick="currentSlide(1)" alt="Bienen auf Krokusen">
+                        <img class="demo cursor" src="Bilder/Winter/Schnee2-1024.jpg" style="width:100%" onclick="currentSlide(1)" alt="Bienenvölker im Schnee bei Sonne">
                     </div>
                     <div class="column">
-                        <img class="demo cursor" src="Bilder/Winter/Schnee1-1024.jpg" style="width:100%" onclick="currentSlide(2)" alt="Bienen auf einem Krokussen von nahem">
+                        <img class="demo cursor" src="Bilder/Winter/Schnee1-1024.jpg" style="width:100%" onclick="currentSlide(2)" alt="Bienenvölker im Schnee">
                     </div>
-                    <div class="column">
-                        <img class="demo cursor" src="Bilder/Winter/Schneefall1-1024.jpg" style="width:100%" onclick="currentSlide(3)" alt="Weidekätzchen">
-                    </div>
+    
                 </div>
             </div>
         </article>
         <article>
             <h3>Ende Februar</h3>
-            <p>
+            <p class="text">
                 Die Bienen fliegen bei Sonne schon und besuchen Krokusse und andere Frühblüher, die überall in der Nähe stehen. Die Bienen starten so Pollen für die erste Brut zu suchen, auch wenn die Nächte wieder kalt geworden sind. 
             </p>
-            <!-- responsive picture example 
-            <img id="responsive-picture" src="Bilder/Winter/Bienen_im_Winter1_1024.jpg" alt="Bienenvölker bei Schneefall">-->
-            <!-- Container for the image gallery -->
-            <div class="imageContainer2">
-
-                <!-- Full-width images with number text -->
-                <div class="imageSlide">
-                    <div class="numbertext">1 / 3</div>
-                    <img src="Bilder/Bienen/Krokus2-1024.jpg" alt="Bienen auf Krokusen" id="responsive-picture">
-                </div>
-
-                <div class="imageSlide">
-                    <div class="numbertext">2 / 3</div>
-                        <img src="Bilder/Bienen/Krokus1-1024.jpg" alt="Bienen auf einem Krokussen von nahem" id="responsive-picture">
-                </div>
-
-                <div class="imageSlide">
-                    <div class="numbertext">3 / 3</div>
-                        <img src="Bilder/Bienen/Weide1-1024.jpg" alt="Weidekätzchen" id="responsive-picture">
-                </div>
-
-                <!-- next und previous button -->
-                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                <a class="next" onclick="plusSlides(-1)">&#10095;</a>
-
-                <!-- Image text -->
-                <div class="caption-container">
-                    <p id="caption"></p>
-                </div>
-
-                <!-- Thumbnail images -->
-                <div class="row">
-                    <div class="column">
-                        <img class="demo cursor" src="Bilder/Bienen/Krokus2-1024.jpg" style="width:100%" onclick="currentSlide(1)" alt="Bienen auf Krokusen">
-                    </div>
-                    <div class="column">
-                        <img class="demo cursor" src="Bilder/Bienen/Krokus1-1024.jpg" style="width:100%" onclick="currentSlide(2)" alt="Bienen auf einem Krokussen von nahem">
-                    </div>
-                    <div class="column">
-                        <img class="demo cursor" src="Bilder/Bienen/Weide1-1024.jpg" style="width:100%" onclick="currentSlide(3)" alt="Weidekätzchen">
-                    </div>
-                </div>
-            </div>
+            <img id="responsive-picture" src="Bilder/Bienen/Krokus2-1024.jpg" alt="Bienenvölker bei Schneefall">
         </article>
         <article>
             <h3>Januar</h3>
-            <p>
+            <p class="text">
                 Im Januar hat der Imker nicht viel zu tun. 
                 Es gilt nur den Futtervorrat im Auge zu behalten. 
                 Wer seine Bienen aber stark genug, mit wenig Varroamilben und mit genug Futter eingewintert hat, der muss sich keine Sorgen machen. 
@@ -172,15 +121,15 @@
                 Auch einen Blick durch die Folie von oben kann Aufschluss bringen, hier hält man Ausschau nach dem Futterkranz, den man von oben sehen kann.
                 <br>
                 </p>
-                <p>
+                <img id="responsive-picture" src="Bilder/Winter/Bienen_im_Winter1_1024.jpg" alt="Bienenvölker bei Schneefall im Januar" >
+                <!-- <p>
                 <picture>
                     <source media="(min-width: 1024px)" srcset="Bilder/Winter/Bienen_im_Winter1_1024.jpg" alt="Bienenvölker bei Schneefall"> 
                     <source media="(min-width: 640px)" srcset="Bilder/Winter/Bienen_im_Winter1_640.jpg" alt="Bienenvölker bei Schneefall">
                     <source media="(min-width: 480px)" srcset="Bilder/Winter/Bienen_im_Winter1_480.jpg" alt="Bienenvölker bei Schneefall">
-                    <!-- Fallback for old Browser -->
-                    <img src="Bilder/Winter/Bienen_im_Winter1_480.jpg" alt="Bienenvölker bei Schneefall">
+                    <img src="Bilder/Winter/Bienen_im_Winter1_480.jpg" alt="Bienenvölker bei Schneefall"> 
                 </picture>
-            </p>
+            </p>-->
         </article>
         <script src="imageContainer.js"></script>
     </body>
@@ -188,7 +137,7 @@
         <!-- Bottom NavBar -->
         <div class="bottom-nav">
             <a href="index.html">Startseite</a> 
-            <a href="Sites/me.html">Über mich</a> 
+            <!-- <a href="Sites/me.html">Über mich</a> -->
             <a href="Sites/impressum.html">Impressum</a> 
             <a href="Sites/kontakt.html">Kontakt</a>
           </div>
