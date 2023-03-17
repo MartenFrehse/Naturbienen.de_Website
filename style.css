@@ -1,6 +1,13 @@
 * {
     box-sizing: border-box; /* for the image container */
 }
+/* funktioniert nicht ?!*/
+
+main {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
 
 body {
   margin: 0;
@@ -21,6 +28,10 @@ img {
   margin-bottom: 10px;
 }
 
+footer {
+  margin-left: 15%;
+  margin-top: auto;
+}
 
 .text {
   text-align: left;
@@ -34,13 +45,14 @@ img {
 
 /* black border, central text, 5px distance from top */
 header,
-nav,
-footer {
+nav {
     width: 100%;
     text-align: center;
     /* border: 1px solid black; */
     margin-top: 5px;
 }
+
+
 
 /* font */
 h1,
@@ -300,7 +312,8 @@ Bottom Nav Bar
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    font-size: 17px;
+   /* font-size: 17px;*/
+    font-size: 100%;
     border-bottom: 3px solid transparent;
   }
   
