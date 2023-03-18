@@ -28,6 +28,10 @@ img {
   margin-bottom: 10px;
 }
 
+img.shop {
+  border: solid 2px black;
+}
+
 footer {
   margin-left: 15%;
   margin-top: auto;
@@ -52,7 +56,7 @@ nav {
     margin-top: 5px;
 }
 
-
+p { text-align: center;}
 
 /* font */
 h1,
