@@ -54,9 +54,132 @@
         <script src="../navbar.js"></script>
     </header>
     <body>
-        <div class="filler">
+        <article>
+            <h3>Allgemeines</h3>
+            <p class="text">
+                Laut der <a href="https://www.deutschewildtierstiftung.de/wildtiere/wildbienen#:~:text=Wildbienen%20(Apidae)%20geh%C3%B6ren%2C%20wie,Furchenbienen%20besitzen%20eine%20soziale%20Lebensweise.https://www.deutschewildtierstiftung.de/wildtiere/wildbienen#:~:text=Wildbienen%20(Apidae)%20geh%C3%B6ren%2C%20wie,Furchenbienen%20besitzen%20eine%20soziale%20Lebensweise">Deutschen Wildtier Stiftung </a>
+                haben wir in Deutschland 585 verschiede Wildbienenarten. 
+                Die meisten dieser Wildbienen leben, anders als die Honigbienen, solitär. 
+                Eine Ausnahme machen die Hummeln, die ebenso zu den Wildbienen zählen. 
+                Die Wildbienen ernähren sich wie die Honigbiene von Nektar und Pollen jedoch sind 30% dieser Wildbienen Spezialisten, die sich nur von bestimmte Pflanzenfamilien, Pflanzengattungen oder Pflanzenarten ernähren und damit auf diese angewiesen sind.
+            </p>
+            <h3>Gehörnte Mauerbiene</h3>
+            <p class="text">
+                Ich habe bei mir im Garten ganz viele Gehörnte Mauerbienen, die meine Nisthilfen in Anspruch nehmen. 
+                Es ist sehr beeindruckend, wenn man beinahe hundert Gehörnte Mauerbienen vor seinem Wildbienenhotel herumfliegen sieht. 
+                In Deutschland sind insgesamt 40 verschiedene Mauerbienenarten bekannt und die Gehörnte Mauerbiene ist mit 10 bis 15 Milimetern Größe einer der größeren Vertreterinnen. 
+                Sie hat ein schwarzes Brustteil und fällt mit ihrem fuchsroten, stark behaarten Hinterteil sehr einfach auf. 
+                Sie sammelt an vielen verschiedenen Blüten Pollen und ist nicht auf eine bestimmte Blüte angewiesen. 
+            </p>
+            <div class="imageContainer">
 
-        </div>
+                <!-- Full-width images with number text -->
+                <div class="imageSlide">
+                    <div class="numbertext">1 / 4</div>
+                        <img src="../Bilder/Wildbienen/Mauerbiene1-1024.jpg" alt="Bienen im Schnee" id="responsive-picture">
+                </div>
+                <div class="imageSlide">
+                    <div class="numbertext">2 / 4</div>
+                        <img src="../Bilder/Wildbienen/Mauerbiene2-1024.jpg" alt="Bienen im Schnee" id="responsive-picture">
+                </div>
+                <div class="imageSlide">
+                    <div class="numbertext">3 / 4</div>
+                        <img src="../Bilder/Wildbienen/Mauerbiene3-1024.jpg" alt="Bienen im Schnee" id="responsive-picture">
+                </div>
+                <div class="imageSlide">
+                    <div class="numbertext">4 / 4</div>
+                        <img src="../Bilder/Wildbienen/Mauerbiene4-1024.jpg" alt="Bienen im Schnee" id="responsive-picture">
+                </div>
+
+                <!-- next und previous button -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(+1)">&#10095;</a>
+
+                <!-- Image text -->
+                <div class="caption-container">
+                    <p id="caption"></p>
+                </div>
+
+                <!-- Thumbnail images -->
+                <div class="row">
+                    <div class="column">
+                        <img class="demo cursor" src="../Bilder/Wildbienen/Mauerbiene1-1024.jpg" style="width:100%" onclick="currentSlide(1)" alt="Bienenvölker im Schnee bei Sonne">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="../Bilder/Wildbienen/Mauerbiene2-1024.jpg" style="width:100%" onclick="currentSlide(2)" alt="Bienenvölker im Schnee">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="../Bilder/Wildbienen/Mauerbiene3-1024.jpg" style="width:100%" onclick="currentSlide(3)" alt="Bienenvölker im Schnee">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="../Bilder/Wildbienen/Mauerbiene4-1024.jpg" style="width:100%" onclick="currentSlide(4)" alt="Bienenvölker im Schnee">
+                    </div>
+    
+                </div>
+            </div>
+            <script>
+                let slideIndex = 1;
+                showSlides (slideIndex);
+
+                // Next / previous controls 
+                function plusSlides(n) {
+                    showSlides(slideIndex += n);
+                }
+
+                // Thumbnail image controls 
+                function currentSlide(n) {
+                    showSlides(slideIndex = n);
+                } 
+
+                function showSlides(n) {
+                    let i;
+                    let slides = document.getElementsByClassName("imageSlide");
+                    let dots = document.getElementsByClassName("demo");
+                    let captionText = document.getElementById("caption");
+                    if (n > slides.length) {slideIndex = 1}
+                    if (n < 1) {slideIndex = slides.length}
+                    for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                    }
+                    for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                    }
+                    slides[slideIndex-1].style.display = "block";
+                    dots[slideIndex-1].className += " active";
+                    captionText.innerHTML = dots[slideIndex-1].alt;
+                }
+            </script>
+            <h3>Nisthilfen</h3>
+            <p class="text">
+                Es ist nicht schwer, etwas für Wildbienen zu machen. Beim Bau eines Wildbienenhotels gibt es aber trotzdem ein paar Sachen zu beachten. 
+            </p>
+            <ul>
+                <li>Das Wildbienenhotel sollte witterungsgeschützt sein und an einem sonnigen Platz stehen.</li>
+                <li>Verwenden Sie keine Glas- oder Plastikröhrchen. Diese sind luftundurchlässig und verpilzen, wodurch die Brut stirbt.</li>
+                <li>Verwenden Sie abgelagertes Holz. Achten Sie dabei außerdem auf den Abstand der Holzbohrungen. 
+                    Bei Löchern, die zu dicht nebeneinander gebohrt sind, drohen sich Risse zu bilden. 
+                    Diese Löcher werden von Wildbienen gemieden. 
+                    Wenn man quer zu den Jahresringen bohrt, ist die Gefahr, dass sich Risse bilden, geringer.</li>
+            </ul>
+            <p class="text">Am einfachsten geht der Bau eines Wildbienenhotels mit Holzblöcken oder Pflanzenstängel.</p>
+
+            <h4>Aus einem Holzblock oder Holzstamm</h4>
+            <p class="text">
+                Verwenden Sie Hartholz wie Esche, Buche, Eiche oder Holz von Obstbäumen wie Apfel. 
+                Auf keinen Fall sollten Sie Nadelholz nehmen, da dieses harzt und so die Flügel der Wildbienen dadurch verkleben. 
+                Bohren Sie nun Löcher und achten dabei auf genügend Abstand und dass die Löcher nicht ausgefranst sind, so dass sich die Wildbienen die Flügel verletzen könnten. 
+                Die Löcher sollten einen Durchmesser von 3 bis 8 mm haben und etwa 15 cm tief sein. So können viele verschiedene Wildbienen hier Nisten.
+                </p>
+            <h4>Aus Pflanzenstängeln</h4>
+            <p class="text">
+                Wildbienen nehmen auch gerne Pflanzenstängel zum Nisten. 
+                Dafür eignen sich Stängel von Holunder, Brombeere oder Sommerflieder, aber auch Bambusrohre und getrocknete Schilfhalme nehmen viele Wildbienen gerne an. 
+                Die Stängel können gebündelt waagerecht im Wildbienenhotel platziert werden. 
+                Aber es können auch 50 cm lange getrocknete Brombeer- oder Holunderstängel senkrecht gebündelt aufgestellt werden. 
+                Die Wildbienen schaffen sich hier selbst einen Nistplatz, indem sie sich einen Hohlraum ins Mark fressen. 
+                Für diese Wildbienen können auch einfach die verblühten Stauden nach dem Sommer bis zum Frühjahr stehen gelassen werden. 
+            </p>
+        </article>
     </body>
     <footer>
         <!-- Bottom NavBar -->

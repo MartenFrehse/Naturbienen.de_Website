@@ -74,6 +74,9 @@ h2 {
 }
 h3 { font-size: 180%; }
 
+ul {
+  text-align: left;
+}
 
 /* 
 ===================================
@@ -190,8 +193,7 @@ IMAGE-CONTAINER
 */
 
 /* Position the image container (needed to position the left and right arrows) */
-.imageContainer,
-.imageContainer2 {
+.imageContainer {
   position: relative;
   /* width: 1024px; */
   margin: auto;
