@@ -11,6 +11,7 @@ main {
 
 body {
   margin: 0;
+  /* background-color: rgba(27,132,168,1); */
 }
 
 body > footer {
@@ -19,6 +20,8 @@ body > footer {
 
 article {
     margin: 0 15% 0 15%; 
+    padding-left: 5%;
+    padding-right: 5%;
     text-align: center;
     background-color: white;
     border-bottom: 2px solid #179d97;
@@ -34,7 +37,9 @@ img.shop {
 
 footer {
   margin-left: 15%;
+  max-width: 70%;
   margin-top: auto;
+  background-color: white;
 }
 
 .text {
@@ -53,7 +58,8 @@ nav {
     width: 100%;
     text-align: center;
     /* border: 1px solid black; */
-    margin-top: 5px;
+    /* margin-top: 5px; */
+    background-color: white;
 }
 
 p { text-align: center;}
@@ -187,6 +193,33 @@ a {
 }
 
 /*
+============================
+JUMP TO TOP BUTTON
+============================
+*/
+
+#topButton {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: rgb(180, 180, 180); /* Set a background color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
+}
+
+#topButton:hover {
+  background-color: grey;
+}
+
+
+
+/*
 =============================
 IMAGE-CONTAINER 
 =============================
@@ -195,6 +228,7 @@ IMAGE-CONTAINER
 /* Position the image container (needed to position the left and right arrows) */
 .imageContainer {
   position: relative;
+  max-width: 1024px;
   /* width: 1024px; */
   margin: auto;
   margin-bottom: 10px;
