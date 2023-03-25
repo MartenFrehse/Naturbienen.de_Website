@@ -62,7 +62,10 @@ nav {
     background-color: white;
 }
 
-p { text-align: center;}
+p { 
+  text-align: center;
+}
+
 
 /* font */
 h1,

@@ -36,7 +36,7 @@
     </head>
 <main>
     <header>
-        <h1 class="head-headline">Die Biene</h1>
+        <h1 class="head-headline">Die Honigbiene</h1>
         <p class="head-description">Was ist eine Biene und was muss ich noch wissen?</p>
         <!-- Navigation Bar -->
         <div class="topnav" id="myTopnav">
@@ -54,7 +54,111 @@
         <script src="../navbar.js"></script>
     </header>
     <body>
-        <div class="filler"></div>
+        <article>
+            <h3>Allgemeines</h3>
+            <p class="text">
+                Die Honigbiene ist ein sehr facettenreiches und faszinierendes Tier, das mich sehr schnell in seinen Bann gezogen hat, als ich angefangen habe, mich fürs Imkern zu begeistern. 
+                Sie gibt es bereits seit 40 Millionen Jahren und weltweit gibt es neun verschiedene Arten von ihr. Bei uns in Europa ist die Honigbienenart Apis mellifera (die westliche Honigbiene) heimisch. 
+                <br> <br>
+                Honigbienen unterscheiden sich von Wildbienen vor allem darin, dass sie in einem Volk leben, während die meisten Wildbienen solitär leben und alleine in der Natur nisten. 
+                Die westliche Honigbiene ist braun-schwarz, sie hat ein behaartes Brustteil und der Hinterleib hat helle und dunkle Streifen.
+            </p>
+            <div class="imageContainer">
+
+                <!-- Full-width images with number text -->
+                <div class="imageSlide">
+                    <div class="numbertext">1 / 4</div>
+                        <img src="../Bilder/Bienen/Biene.jpg" alt="Eine Honogbiene auf einer Kornblume" id="responsive-picture">
+                </div>
+                <div class="imageSlide">
+                    <div class="numbertext">2 / 4</div>
+                        <img src="../Bilder/Bienen/Biene_auf_Blüte_Krokusse.JPG" alt="Honigbiene auf einem Krokuss" id="responsive-picture">
+                </div>
+                <div class="imageSlide">
+                    <div class="numbertext">3 / 4</div>
+                        <img src="../Bilder/Bienen/Biene_auf_Blüte_Obst.jpg" alt="Honigbiene auf einer Obstblüte" id="responsive-picture">
+                </div>
+
+                <!-- next und previous button -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(+1)">&#10095;</a>
+
+                <!-- Image text -->
+                <div class="caption-container">
+                    <p id="caption"></p>
+                </div>
+
+                <!-- Thumbnail images -->
+                <div class="row">
+                    <div class="column">
+                        <img class="demo cursor" src="../Bilder/Bienen/Biene.jpg" style="width:100%" onclick="currentSlide(1)" alt="Eine Honogbiene auf einer Kornblume">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="../Bilder/Bienen/Biene_auf_Blüte_Krokusse.JPG" style="width:100%" onclick="currentSlide(2)" alt="Honigbiene auf einem Krokuss">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="../Bilder/Bienen/Biene_auf_Blüte_Obst.jpg" style="width:100%" onclick="currentSlide(3)" alt="Honigbiene auf einer Obstblüte">
+                    </div>
+    
+                </div>
+            </div>
+            <script>
+                let slideIndex = 1;
+                showSlides (slideIndex);
+
+                // Next / previous controls 
+                function plusSlides(n) {
+                    showSlides(slideIndex += n);
+                }
+
+                // Thumbnail image controls 
+                function currentSlide(n) {
+                    showSlides(slideIndex = n);
+                } 
+
+                function showSlides(n) {
+                    let i;
+                    let slides = document.getElementsByClassName("imageSlide");
+                    let dots = document.getElementsByClassName("demo");
+                    let captionText = document.getElementById("caption");
+                    if (n > slides.length) {slideIndex = 1}
+                    if (n < 1) {slideIndex = slides.length}
+                    for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                    }
+                    for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                    }
+                    slides[slideIndex-1].style.display = "block";
+                    dots[slideIndex-1].className += " active";
+                    captionText.innerHTML = dots[slideIndex-1].alt;
+                }
+            </script>
+            <!-- <img id="responsive-picture" src="../Bilder/Bienen/Biene.jpg" alt="Eine Honigbiene auf einer Kornblume">  -->
+        </article>
+        <article>
+            <h3>Wie leben Honigbienen?</h3>
+            <p class="text">
+                Honigbienen leben nicht allein, sondern in einem großen Bienenstaat. In diesem gibt es eine Königin, Arbeiterinnen und Drohnen. Ein solches Volk umfasst im Sommer bis zu 50.000 Bienen. 
+                <b>Die Arbeiterinnen</b> putzen den Stock, pflegen die Brut, sammeln die Nahrung und halten am Eingang Wache. 
+                <br> <br>                
+                <b>Die Drohnen</b> (männliche Bienen) hingegen haben nur eine Aufgabe, eine Königin zu begatten. Sobald sie ihre Aufgabe erfüllt haben, sterben sie und im Herbst werden alle Drohnen, während der sogenannten Drohnenschlacht, aus dem Stock geworfen. 
+                <br> <br>
+                <b>Die Königin</b> hat die Aufgabe Eier zu legen und damit die Zukunft des Volkes zu sichern. Sie kann im Sommer am Tag bis zu 2000 Eier legen. Das ist auch wichtig, denn eine Arbeiterin lebt im Sommer nur ca. 2 bis 4 Wochen.
+            </p>
+            <img id="responsive-picture" src="../Bilder/Bienen/Königin.JPG" alt="Eine Bienenkönigin auf einer Wabe">
+            <p class="text">
+                Das Bienenjahr orientiert sich an unseren vier Jahreszeiten. Im Frühling wird damit angefangen das Volk aufzubauen und die Königin beginnt Eier zu legen. 
+                Diese Bienen nutzen im Sommer die ganzen Blüten, um genug Vorrat für den Winter zu sammeln und sich zu vermehren. Das nennt man Schwärmen, dabei fliegt die Königin mit ihrem Hofstaat aus und sucht sich eine neue Heimat. 
+                Dabei machen sie einen Zwischenhalt an einem Baum oder ähnlichem, während Kundschafter nach einer geeigneten Bleibe suchen. Das Schwärmen ist der natürliche Vermehrungsprozess der Honigbienen. 
+            </p>
+            <img id="responsive-picture" src="../Bilder/Bienen/Schwarm.JPG" alt="Ein Schwarm Bienen in einem Baum">
+            <p class="text">
+                Im Herbst werden die Winterbienen aufgezogen. Sie leben länger als die Arbeiterinnen im Sommer. 
+                Im Herbst findet auch die Drohnenschlacht statt und die Drohnen werden aus dem Volk verbannt. 
+                Im Winter sitzt das Bienenvolk in einer Traube zusammengekuschelt und heizt diese Traube mit Muskelzittern auf über 20 Grad. 
+            </p>
+        </article>
     </body>
     <footer>
         <!-- Bottom NavBar -->
