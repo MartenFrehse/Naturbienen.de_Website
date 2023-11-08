@@ -41,6 +41,10 @@ footer {
   margin-top: auto;
   background-color: white;
 }
+.text_center {
+  text-align: center;
+  margin-bottom: 50px;
+}
 
 .text {
   text-align: left;
