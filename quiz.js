@@ -43,7 +43,7 @@ function generateQuiz(questions, quizContainer, resultsContainer, submitButton){
             output.push(
                 '<div class="question">' + questions[i].question + '</div>'
                 + '<div class="answers">' + answers.join('') + '</div>'
-                + '<div class="explanation">' + explanation.join('')+'</div>'
+                + '<div class="explanation">' + questions[i].explanation +'</div>'
             );
         }
     
