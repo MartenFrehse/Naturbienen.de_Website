@@ -10,6 +10,8 @@
             content="width=device-width, initial-scale=1.0, shrink-to-fit=no"> 
             <!-- adding Stylesheet -->
             <link rel="stylesheet" href="../style.css">
+            <!-- adding scripts -->
+            <link rel="script" href="../quiz.js">
             <!-- Icons geadded für verschiedene Geräte -->
             <link rel="apple-touch-icon" sizes="57x57" href="../Bilder/Icon/apple-icon-57x57.png">
             <link rel="apple-touch-icon" sizes="60x60" href="../Bilder/Icon/apple-icon-60x60.png">
@@ -105,6 +107,12 @@
     
                 </div>
             </div>
+            <form class="quizz" action="">
+                <div id="quiz"></div>
+                <button id="submit">Get Results</button>
+                <div id="results"></div>
+                <div id="explanation"></div>
+            </form>
             <script>
                 let slideIndex = 1;
                 showSlides (slideIndex);
