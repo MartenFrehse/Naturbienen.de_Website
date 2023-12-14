@@ -103,7 +103,7 @@ ul {
 QUIZ DESIGN
 ===================================
 */
-.question{
+/* .question{
 	font-weight: 600;
 }
 .answers {
@@ -122,7 +122,14 @@ QUIZ DESIGN
 }
 #submit:hover{
 	background-color: #3a8;
-}
+} */
+
+/* .beeQuiz {
+  background-color: #179d97;
+  width: 100vh;
+  height: auto;
+  border: black;
+} */
 
 
 

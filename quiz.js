@@ -99,3 +99,4 @@ var submitButton = document.getElementById('submit');
 
 
 generateQuiz(myQuestions, quizContainer, resultsContainer, submitButton);
+
